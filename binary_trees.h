@@ -92,8 +92,8 @@ int is_perfect_recursive(const binary_tree_t *tree,
 int binary_tree_is_perfect(const binary_tree_t *tree);
 levelorder_queue_t *create_node(binary_tree_t *node);
 void free_queue(levelorder_queue_t *head);
-void push(binary_tree_t *node, levelorder_queue_t *head,
-		levelorder_queue_t **tail);
+void print_push(binary_tree_t *node, levelorder_queue_t *head,
+		levelorder_queue_t **tail, void (*func)(int));
 void pop(levelorder_queue_t **head);
 bst_t *inorder_successor(bst_t *root);
 bst_t *bst_delete(bst_t *root, bst_t *node);
